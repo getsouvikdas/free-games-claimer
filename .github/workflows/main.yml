@@ -8,6 +8,9 @@ on:
 jobs:
   run_script:
     runs-on: ubuntu-latest
+env:
+  EG_EMAIL: ${{ secrets.EG_EMAIL }}
+  EG_PASSWORD: ${{ secrets.EG_PASSWORD }}
 
     steps:
       - name: Checkout Repository
